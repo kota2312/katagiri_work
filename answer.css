@@ -1,0 +1,58 @@
+/* -------　ここから答え -------- */
+
+/* font color */
+h2.sec_title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #22a699;
+}
+
+span.carp-txt {
+    color: #F00;
+}
+
+span.beystars-txt {
+    color: #0000ff;
+}
+
+span.giants-txt {
+    color: #ffa500;
+}
+
+/* background-color */
+section#sec_case {
+    background: rgb(34 166 153 / 20%);
+}
+
+/* text-align */
+.title_wrap {
+    text-align: center;
+}
+
+/* padding + line-height */
+ul.case .li_title_wrap {
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+ul.case .li_text_wrap {
+    padding: 0 2rem 1rem 2rem;
+    line-height: 1.5;
+}
+
+/* position */
+ul.case > li > a {
+    position: relative;
+}
+
+.li_stars_icon {
+    position: absolute;
+    top: -2rem;
+    z-index: 1;
+    left: -2rem;
+}
+
+/* box-shadow */
+ul.case > li {
+    box-shadow: 0px 0px 15px -5px #777777;
+}

@@ -1,0 +1,196 @@
+/* 共通幅 */
+.inner-contents {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    padding: 80px 0px;
+}
+
+@media screen and (max-width: 480px) {
+    .inner-contents {
+        max-width: 750px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        padding: 75px 20px;
+    }
+}
+
+
+/* 共通タイトル */
+.title_wrap {
+    margin-bottom: 80px;
+    position: relative;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.title_wrap::before {
+  border-radius: 5px; /* 線の両端を丸く */
+  bottom: -10px; /* 線の位置 */
+  content: "";
+  height: 3px; /* 線の高さ */
+  left: 50%; /* 線の中央寄せ */
+  position: absolute;
+  transform: translateX(-50%); /* 線の中央寄せ */
+  width: 50px; /* 線の長さ */
+}
+
+section#sec_case .title_wrap::before {
+    background-color: #22a699; /* 線の色 */
+}
+
+section#sec_cost .title_wrap::before {
+    background-color: #ffa500; /* 線の色 */
+}
+
+/* sec case */
+ul.case {
+    display: flex;
+    gap: 4rem;
+    text-align: left;
+}
+
+ul.case > li {
+    width: 33.3333%;
+    background: #FFF;
+    border-radius: 20px;
+}
+
+ul.case .li_title_wrap {
+    font-size: 1.2rem;
+}
+
+ul.case .li_text_wrap {
+    font-size: 0.9rem;
+}
+
+ul.case .li_image_wrap {
+    display: block;
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+
+ul.case .li_image_wrap > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+ul.case > li > a {
+    position: relative;
+}
+
+.li_stars_icon {
+    position: absolute;
+    top: -2rem;
+    z-index: 1;
+    left: -2rem;
+}
+
+/* font color */
+section#sec_case h2.sec_title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section:first-child > div > div.title_wrap > h2 {
+    color: #22a699;
+}
+
+span.carp-txt {
+    color: #F00;
+}
+
+span.beystars-txt {
+    color: #0000ff;
+}
+
+span.giants-txt {
+    color: #ffa500;
+}
+
+/* background-color */
+section#sec_case {
+    background: rgb(34 166 153 / 20%);
+}
+
+/* text-align */
+.title_wrap {
+    text-align: center;
+}
+
+/* padding + line-height */
+ul.case .li_title_wrap {
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+ul.case .li_text_wrap {
+    padding: 0 2rem 1rem 2rem;
+    line-height: 1.5;
+}
+
+/* position */
+ul.case > li > a {
+    position: relative;
+}
+
+.li_stars_icon {
+    position: absolute;
+    top: -2rem;
+    z-index: 1;
+    left: -2rem;
+}
+
+/* box-shadow */
+ul.case > li {
+    box-shadow: 0px 0px 15px -5px #777777;
+}
+
+
+/* sec cost */
+table {
+    width: 100%;
+}
+
+table, table td, table th {
+    border-collapse: collapse;
+    border: 1px solid #ededed;
+}
+
+table td, table th {
+    padding: 1rem;
+}
+
+tr:nth-of-type(even) {
+    background: #eaeaea;
+}
+
+table > thead > tr {
+    background: #294774;
+    color: #FFF;
+}
+
+section#sec_cost h2.sec_title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section:last-child > div > div.title_wrap > h2 {
+    color: #ffa500;
+}
+
+
+/* ここから今日のCSS */
+section:last-child > div > div.title_wrap > h2 {
+    color: #357a00;
+}
+
+section#sec_cost .title_wrap::before {
+    background-color: #357a00;
+}
